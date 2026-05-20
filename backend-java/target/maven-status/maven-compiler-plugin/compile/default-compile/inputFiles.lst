@@ -1,0 +1,14 @@
+C:\AI SaaS Website\NeuroStack-AI\backend-java\src\main\java\com\neurostack\config\SecurityConfig.java
+C:\AI SaaS Website\NeuroStack-AI\backend-java\src\main\java\com\neurostack\entity\User.java
+C:\AI SaaS Website\NeuroStack-AI\backend-java\src\main\java\com\neurostack\controller\UserController.java
+C:\AI SaaS Website\NeuroStack-AI\backend-java\src\main\java\com\neurostack\service\UserService.java
+C:\AI SaaS Website\NeuroStack-AI\backend-java\src\main\java\com\neurostack\controller\AdminController.java
+C:\AI SaaS Website\NeuroStack-AI\backend-java\src\main\java\com\neurostack\controller\ChatController.java
+C:\AI SaaS Website\NeuroStack-AI\backend-java\src\main\java\com\neurostack\repository\UserRepository.java
+C:\AI SaaS Website\NeuroStack-AI\backend-java\src\main\java\com\neurostack\service\JwtService.java
+C:\AI SaaS Website\NeuroStack-AI\backend-java\src\main\java\com\neurostack\controller\AuthController.java
+C:\AI SaaS Website\NeuroStack-AI\backend-java\src\main\java\com\neurostack\dto\LoginRequest.java
+C:\AI SaaS Website\NeuroStack-AI\backend-java\src\main\java\com\neurostack\service\ChatService.java
+C:\AI SaaS Website\NeuroStack-AI\backend-java\src\main\java\com\neurostack\NeuroStackApplication.java
+C:\AI SaaS Website\NeuroStack-AI\backend-java\src\main\java\com\neurostack\service\AuthService.java
+C:\AI SaaS Website\NeuroStack-AI\backend-java\src\main\java\com\neurostack\exception\GlobalExceptionHandler.java

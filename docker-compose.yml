@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - '3000:3000'
+  backend:
+    build: ./backend-java
+    ports:
+      - '8080:8080'
+  ai-service:
+    build: ./ai-service
+    ports:
+      - '8000:8000'
+  redis:
+    image: redis:alpine
+  kafka:
+    image: confluentinc/cp-kafka:latest
