@@ -1,156 +1,185 @@
-NeuroStack-AI/
-│
-├── frontend/                         # React Frontend
-│
-│   ├── public/
-│   │   └── logo.png
-│   │
-│   ├── src/
-│   │   │
-│   │   ├── assets/                  # Images/icons/fonts
-│   │   │
-│   │   ├── components/              # Reusable UI components
-│   │   │   ├── Navbar.jsx
-│   │   │   ├── Sidebar.jsx
-│   │   │   ├── ChatBox.jsx
-│   │   │   ├── MessageBubble.jsx
-│   │   │   ├── Loader.jsx
-│   │   │   └── ProtectedRoute.jsx
-│   │   │
-│   │   ├── pages/                   # Main pages
-│   │   │   ├── Home.jsx
-│   │   │   ├── Login.jsx
-│   │   │   ├── Register.jsx
-│   │   │   ├── Dashboard.jsx
-│   │   │   ├── Chat.jsx
-│   │   │   ├── Profile.jsx
-│   │   │   └── Admin.jsx
-│   │   │
-│   │   ├── services/                # API calls
-│   │   │   ├── authService.js
-│   │   │   ├── chatService.js
-│   │   │   └── userService.js
-│   │   │
-│   │   ├── context/                 # Global state
-│   │   │   └── AuthContext.jsx
-│   │   │
-│   │   ├── routes/
-│   │   │   └── AppRoutes.jsx
-│   │   │
-│   │   ├── utils/
-│   │   │   ├── token.js
-│   │   │   └── helpers.js
-│   │   │
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── index.css
-│   │
-│   ├── package.json
-│   └── vite.config.js
-│
-│
-├── backend-java/                    # Main Java Backend
-│
-│   ├── src/
-│   │   └── main/
-│   │       ├── java/com/neurostack/
-│   │       │
-│   │       │   ├── config/          # Security/config files
-│   │       │   │   ├── JwtConfig.java
-│   │       │   │   ├── SecurityConfig.java
-│   │       │   │   └── RedisConfig.java
-│   │       │   │
-│   │       │   ├── controller/      # API endpoints
-│   │       │   │   ├── AuthController.java
-│   │       │   │   ├── ChatController.java
-│   │       │   │   ├── UserController.java
-│   │       │   │   └── AdminController.java
-│   │       │   │
-│   │       │   ├── service/         # Business logic
-│   │       │   │   ├── AuthService.java
-│   │       │   │   ├── ChatService.java
-│   │       │   │   ├── JwtService.java
-│   │       │   │   └── UserService.java
-│   │       │   │
-│   │       │   ├── repository/      # Database queries
-│   │       │   │   ├── UserRepository.java
-│   │       │   │   └── ChatRepository.java
-│   │       │   │
-│   │       │   ├── entity/          # Database models
-│   │       │   │   ├── User.java
-│   │       │   │   ├── Chat.java
-│   │       │   │   └── Message.java
-│   │       │   │
-│   │       │   ├── dto/             # Request/response objects
-│   │       │   │   ├── LoginRequest.java
-│   │       │   │   ├── RegisterRequest.java
-│   │       │   │   └── ChatRequest.java
-│   │       │   │
-│   │       │   ├── security/
-│   │       │   │   ├── JwtFilter.java
-│   │       │   │   └── CustomUserDetailsService.java
-│   │       │   │
-│   │       │   ├── websocket/
-│   │       │   │   └── WebSocketConfig.java
-│   │       │   │
-│   │       │   ├── kafka/
-│   │       │   │   ├── KafkaProducer.java
-│   │       │   │   └── KafkaConsumer.java
-│   │       │   │
-│   │       │   ├── exception/
-│   │       │   │   └── GlobalExceptionHandler.java
-│   │       │   │
-│   │       │   └── NeuroStackApplication.java
-│   │       │
-│   │       └── resources/
-│   │           ├── application.properties
-│   │           └── static/
-│   │
-│   ├── Dockerfile
-│   ├── pom.xml
-│   └── .env
-│
-│
-├── ai-service/                      # Python AI Backend
-│
-│   ├── app/
-│   │   ├── routes/
-│   │   │   └── ai_routes.py
-│   │   │
-│   │   ├── services/
-│   │   │   ├── openai_service.py
-│   │   │   ├── embedding_service.py
-│   │   │   └── pdf_service.py
-│   │   │
-│   │   ├── models/
-│   │   │   └── request_model.py
-│   │   │
-│   │   ├── utils/
-│   │   │   └── tokenizer.py
-│   │   │
-│   │   └── main.py
-│   │
-│   ├── requirements.txt
-│   ├── Dockerfile
-│   └── .env
-│
-│
-├── docker-compose.yml               # Run all services together
-│
-├── nginx/                           # Reverse proxy
-│   └── nginx.conf
-│
-├── kubernetes/                      # K8 deployment files
-│   ├── frontend.yaml
-│   ├── backend.yaml
-│   ├── ai-service.yaml
-│   └── postgres.yaml
-│
-├── docs/                            # Documentation
-│   ├── API_DOCS.md
-│   ├── ARCHITECTURE.md
-│   └── DATABASE_SCHEMA.md
-│
-├── .gitignore
-├── README.md
-└── LICENSE
+Folder PATH listing for volume Windows-SSD
+Volume serial number is B6C9-4081
+C:.
+|   docker-compose.yml
+|   LICENSE
+|   NeuroStack-AI.gitignore
+|   README.md
+|   structure.txt
+|   
++---ai-service
+|   |   .env
+|   |   Dockerfile
+|   |   requirements.txt
+|   |   
+|   \---app
+|       |   main.py
+|       |   
+|       +---models
+|       |       request_model.py
+|       |       
+|       +---routes
+|       |       ai_routes.py
+|       |       
+|       +---services
+|       |       embedding_service.py
+|       |       openai_service.py
+|       |       pdf_service.py
+|       |       
+|       \---utils
+|               tokenizer.py
+|               
++---backend-java
+|   |   .env
+|   |   Dockerfile
+|   |   pom.xml
+|   |   
+|   +---src
+|   |   \---main
+|   |       +---java
+|   |       |   \---com
+|   |       |       \---neurostack
+|   |       |           |   NeuroStackApplication.java
+|   |       |           |   
+|   |       |           +---config
+|   |       |           |       SecurityConfig.java
+|   |       |           |       
+|   |       |           +---controller
+|   |       |           |       AdminController.java
+|   |       |           |       AuthController.java
+|   |       |           |       ChatController.java
+|   |       |           |       UserController.java
+|   |       |           |       
+|   |       |           +---dto
+|   |       |           |       LoginRequest.java
+|   |       |           |       
+|   |       |           +---entity
+|   |       |           |       User.java
+|   |       |           |       
+|   |       |           +---exception
+|   |       |           |       GlobalExceptionHandler.java
+|   |       |           |       
+|   |       |           +---kafka
+|   |       |           +---repository
+|   |       |           |       UserRepository.java
+|   |       |           |       
+|   |       |           +---security
+|   |       |           +---service
+|   |       |           |       AuthService.java
+|   |       |           |       ChatService.java
+|   |       |           |       JwtService.java
+|   |       |           |       UserService.java
+|   |       |           |       
+|   |       |           \---websocket
+|   |       \---resources
+|   |           |   application.properties
+|   |           |   
+|   |           \---static
+|   \---target
+|       |   neurostack-backend-0.0.1-SNAPSHOT.jar
+|       |   
+|       +---classes
+|       |   |   application.properties
+|       |   |   
+|       |   \---com
+|       |       \---neurostack
+|       |           |   NeuroStackApplication.class
+|       |           |   
+|       |           +---config
+|       |           |       SecurityConfig.class
+|       |           |       
+|       |           +---controller
+|       |           |       AdminController.class
+|       |           |       AuthController.class
+|       |           |       ChatController.class
+|       |           |       UserController.class
+|       |           |       
+|       |           +---dto
+|       |           |       LoginRequest.class
+|       |           |       
+|       |           +---entity
+|       |           |       User.class
+|       |           |       
+|       |           +---exception
+|       |           |       GlobalExceptionHandler.class
+|       |           |       
+|       |           +---repository
+|       |           |       UserRepository.class
+|       |           |       
+|       |           \---service
+|       |                   AuthService.class
+|       |                   ChatService.class
+|       |                   JwtService.class
+|       |                   UserService.class
+|       |                   
+|       +---generated-sources
+|       |   \---annotations
+|       +---maven-archiver
+|       |       pom.properties
+|       |       
+|       \---maven-status
+|           \---maven-compiler-plugin
+|               \---compile
+|                   \---default-compile
+|                           createdFiles.lst
+|                           inputFiles.lst
+|                           
++---docs
+|       API_DOCS.md
+|       ARCHITECTURE.md
+|       DATABASE_SCHEMA.md
+|       
++---frontend
+|   |   package.json
+|   |   vite.config.js
+|   |   
+|   +---public
+|   |       logo.png
+|   |       
+|   \---src
+|       |   App.jsx
+|       |   index.css
+|       |   main.jsx
+|       |   
+|       +---assets
+|       +---components
+|       |       ChatBox.jsx
+|       |       Loader.jsx
+|       |       MessageBubble.jsx
+|       |       Navbar.jsx
+|       |       ProtectedRoute.jsx
+|       |       Sidebar.jsx
+|       |       
+|       +---context
+|       |       AuthContext.jsx
+|       |       
+|       +---pages
+|       |       Admin.jsx
+|       |       Chat.jsx
+|       |       Dashboard.jsx
+|       |       Home.jsx
+|       |       Login.jsx
+|       |       Profile.jsx
+|       |       Register.jsx
+|       |       
+|       +---routes
+|       |       AppRoutes.jsx
+|       |       
+|       +---services
+|       |       authService.js
+|       |       chatService.js
+|       |       userService.js
+|       |       
+|       \---utils
+|               helpers.js
+|               token.js
+|               
++---kubernetes
+|       ai-service.yaml
+|       backend.yaml
+|       frontend.yaml
+|       postgres.yaml
+|       
+\---nginx
+        nginx.conf
+        
